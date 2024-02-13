@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ScrollViewCount"
+    android:background="@color/white"
+    android:padding="@dimen/_10sdp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20sdp"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:text="Wine Quality Predictor"
+            android:textColor="#090909"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fixed Acidity:"
+                android:textStyle="italic|bold"
+                android:textSize="@dimen/_15sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/fixed_acidity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/back"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="italic|bold"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Volatile Acidity:"
+                android:textStyle="italic|bold"
+                android:textSize="@dimen/_15sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/volatile_acidity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:background="@drawable/back"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="italic|bold"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Citric Acid:"
+                android:textStyle="italic|bold"
+                android:textSize="@dimen/_15sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/citric_acid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/back"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="italic|bold"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Residual Sugar:"
+                android:textStyle="italic|bold"
+                android:textSize="@dimen/_15sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/residual_sugar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/back"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="italic|bold"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Chlorides:"
+                android:textStyle="italic|bold"
+                android:textSize="@dimen/_15sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/chlorides"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:fontFamily="serif-monospace"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:background="@drawable/back"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="italic|bold"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Free Sulphur Dioxide:"
+                android:textStyle="italic|bold"
+                android:textSize="@dimen/_15sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/free_so2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:background="@drawable/back"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="italic|bold"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total Sulphur Dioxide:"
+                android:textStyle="italic|bold"
+                android:textSize="@dimen/_15sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/total_so2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:background="@drawable/back"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="italic|bold"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Density:"
+                android:textStyle="italic|bold"
+                android:textSize="@dimen/_15sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/density"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/back"
+                android:fontFamily="serif-monospace"
+                android:minHeight="48dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="italic|bold"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PH:"
+                android:textStyle="italic|bold"
+                android:textSize="@dimen/_15sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/ph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:minHeight="48dp"
+                android:gravity="center"
+                android:background="@drawable/back"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="italic|bold"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sulphates:"
+                android:textStyle="italic|bold"
+                android:textSize="@dimen/_15sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/sulphates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:background="@drawable/back"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+
+                android:textStyle="italic|bold"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Alcohol:"
+                android:textStyle="italic|bold"
+                android:textSize="@dimen/_15sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="serif-monospace"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/alcohol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:background="@drawable/back"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="italic|bold"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Wine Quality"
+            android:layout_margin="@dimen/_10sdp"
+            android:backgroundTint="@color/teal_700"/>
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_margin="@dimen/_10sdp"
+            android:backgroundTint="@color/teal_700"/>
+
+        <TextView
+            android:id="@+id/quality"
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/_30sdp"
+            android:textColor="#735578"
+            android:gravity="center"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="italic" />
+
+
+
+    </LinearLayout>
+</ScrollView>
